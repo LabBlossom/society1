@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>社区活动地图</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">社</div>
+        <div class="brandText">
+          <div class="brandTitle">社区活动地图</div>
+          <div class="brandSub">点省份 → 点城市 → 看活动</div>
+        </div>
+      </div>
+
+      <nav class="topnav">
+        <a class="navlink" href="#/">首页</a>
+        <a class="navlink" href="#/about">说明</a>
+      </nav>
+
+      <div class="authArea">
+        <div id="authUser" class="authUser" hidden></div>
+        <button id="btnLogin" class="btn btnGhost">登录</button>
+        <button id="btnRegister" class="btn btnPrimary">注册</button>
+        <button id="btnLogout" class="btn btnGhost" hidden>退出</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <div id="app"></div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        GitHub Pages 直接可用（纯静态）。图片在 <code>assets/</code>，你可直接替换同名文件。
+      </div>
+    </footer>
+
+    <!-- ECharts（地图） -->
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <!-- 中国地图（省份可点） -->
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5/map/js/china.js"></script>
+
+    <script src="./src/data.js"></script>
+    <script src="./src/app.js"></script>
+  </body>
+</html>

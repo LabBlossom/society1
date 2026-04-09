@@ -1,0 +1,20 @@
+把你的图片放到这个 assets 目录里即可：
+
+- home.jpg                    首页背景
+- province.jpg                省页默认背景（未配置 heroImage 时用）
+- city.jpg                    城市页默认背景（未配置 heroImage 时用）
+- activity.jpg                活动页默认封面（未配置 coverImage 时用）
+
+示例数据用到的图片（你也可以直接替换同名文件）：
+
+- province-guangdong.jpg
+- province-sichuan.jpg
+- city-guangzhou.jpg
+- city-shenzhen.jpg
+- city-chengdu.jpg
+- activity-walk.jpg
+- activity-market.jpg
+- activity-science.jpg
+- activity-book.jpg
+
+提示：本项目是纯静态站点，图片建议用 jpg/webp，文件名不要有空格。
